@@ -15,6 +15,7 @@
     <p>Please Show me !</p>
     <button id="hide">Hide</button>
     <button id="show">Show</button>
+    <button id="toggle">Toggole</button>
 
     <script>
         $(document).ready(function(){
@@ -24,6 +25,9 @@
 
             $('#show').click(function(){
                 $('p').show(2000);
+            })
+            $('#toggle').click(function(){
+                $('p').toggle(2000);
             })
 
         })
