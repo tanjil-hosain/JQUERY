@@ -17,6 +17,9 @@
     <button id="show">Show</button>
     <button id="toggle">Toggole</button>
 
+    <h1>Hello This is Bangladesh! </h1>
+    <button id="clr">Chng-clr</button>
+
     <script>
         $(document).ready(function(){
             $('#hide').click(function(){
@@ -30,6 +33,13 @@
                 $('p').toggle(2000);
             })
 
+        })
+
+        $('#clr').click(function(){
+            $('h1').css({
+                "color":"red",
+                "background-color": "yellow"
+            })
         })
     </script>
 </body>
