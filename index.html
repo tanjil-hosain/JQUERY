@@ -6,6 +6,12 @@
     <title>Document</title>
     
     <script src="js/jquery-4.0.0.min.js"></script>
+    <style>
+        .myclass{
+            background-color: purple;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,8 +23,14 @@
     <button id="show">Show</button>
     <button id="toggle">Toggole</button>
 
+    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque iste rerum molestias iusto, sunt nam vero odio nostrum, id consectetur eligendi voluptate maxime voluptatem optio distinctio deserunt, libero aliquid cumque.</h4>
+
     <h1>Hello This is Bangladesh! </h1>
     <button id="clr">Chng-clr</button>
+
+
+    <h2 id="pera"> Lorem ipsum dolor sit amet.</h2>
+    <button  id="btn">change Text</button>
 
     <script>
         $(document).ready(function(){
@@ -39,6 +51,14 @@
             $('h1').css({
                 "color":"red",
                 "background-color": "yellow"
+            })
+        })
+
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('#pera').html("<h1>Hello World!");
+                    $('#pera').toggle(2000)
+
             })
         })
     </script>
