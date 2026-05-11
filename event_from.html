@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <form action="">
+        name: <br>
+        <input type="text" id="name"> <br>
+        Email: <br>
+        <input type="text"  id="email"> <br> <br>
+        <select name="" id="drop">
+            <option value="">Bsc</option>
+            <option value="">Msc</option>
+            <option value="">Psc</option>
+        </select>
+        alert:
+        <input type="text" id=" alert"> <br>
+        <input type="submit" value="Submit">
+    <script>
+        $("#name").blur(function(){
+            $(this).css("background", "red");
+        })
+        
+
+    </script>
+</body>
+</html>
