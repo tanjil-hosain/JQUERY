@@ -27,10 +27,14 @@
 
     <h1>Hello This is Bangladesh! </h1>
     <button id="clr">Chng-clr</button>
+    <h2 id="Tanjil"><i>Hi I Am Tanjil Hossain</i></h2>
 
 
     <h2 id="pera"> Lorem ipsum dolor sit amet.</h2>
     <button  id="btn">change Text</button>
+    <button id="before">before</button>
+
+
 
     <script>
         $(document).ready(function(){
@@ -57,7 +61,15 @@
         $(document).ready(function(){
             $('#btn').click(function(){
                 $('#pera').html("<h1>Hello World!");
-                    $('#pera').toggle(2000)
+                    // $('#pera').toggle(2000)
+
+            })
+        })
+
+             $(document).ready(function(){
+            $('#before').click(function(){
+                $('#pera').before("<h1>Hello World!");
+                    // $('#pera').toggle(2000)
 
             })
         })
